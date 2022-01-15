@@ -1,0 +1,142 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin-left: 70;
+  margin-right: 70;
+  /* margin: 20px 120px; */
+  font-weight: 500px;
+}
+nav a {
+  text-decoration: none;
+
+  padding: 15px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+.animation:hover {
+  transform: scale(1.2);
+  transition: transform 1.5s ease-in-out;
+}
+.horizontal-line {
+  color: grey;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.rating i {
+  color: goldenrod;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 120px;
+}
+
+.button-link {
+  text-decoration: none;
+  background-image: linear-gradient(tomato, rgb(230, 61, 83));
+  padding: 10px 20px;
+  color: white;
+  font-weight: 900;
+  border-radius: 10px;
+}
+.button-link i {
+  margin-left: 10px;
+}
+
+.division {
+  display: flex;
+  margin: 100px 120px;
+}
+.left {
+  margin-right: 100px;
+}
+.half-width img {
+  height: 400opx;
+  width: 500px;
+  border-radius: 10px;
+  margin-right: 60px;
+}
+li {
+  list-style: none;
+}
+li a {
+  color: black;
+}
+
+.grid-cell img {
+  width: 350px;
+  height: 250px;
+}
+.collection {
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 4em;
+  justify-items: center;
+  /* margin: 20px 120px; */
+  margin-left: 70;
+  margin-right: 70;
+}
+.grid-cell {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  margin: 10%;
+  border-radius: 10px;
+}
+.see-more {
+  text-align: right;
+  margin-right: 140px;
+}
+.see-more a {
+  text-decoration: none;
+  color: rgba(241, 23, 125, 0.966);
+}
+
+footer div {
+  text-align: center;
+  color: white;
+
+  grid-row-gap: 5px 10px;
+  background-color: black;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+footer i {
+  margin: 10px;
+}
+footer a {
+  color: white;
+}
+/* --------------- 
+ Media Queries 
+ ---------------  */
+/* --------------- 
+ Mobile Devices 
+ ---------------  */
+@media only screen and (max-width: 688px) {
+  .division {
+    width: 100%;
+  }
+  .grid-container,
+  .animation {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-cell,
+  .menu {
+    /* grid-template-columns: repeat(1, 1fr); */
+    flex-direction: column;
+  }
+}
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .division {
+    width: 100%;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
